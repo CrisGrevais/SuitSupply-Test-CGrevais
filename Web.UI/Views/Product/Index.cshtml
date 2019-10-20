@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Web.UI.Models.ProductModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Products</h1>
+
+<form asp-controller="Product" asp-action="Index" method="get">
+    <div class="col-md-4">
+        <p>
+            Name: <input type="text" name="Name">
+            <input type="submit" class="btn btn-primary" value="Filter" />
+        </p>
+    </div>
+    <div class="col-md-4">
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+    </div>
+    <div class="col-md-4">
+        <p>
+            @Html.ActionLink("Export to Excel", "Export")
+        </p>
+    </div>
+</form>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdated)
+        </th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(x => product.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(x => product.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(x => product.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(x => product.LastUpdated)
+            </td>
+            <td>
+                @Html.ActionLink("View", "Details", new { id = product.Id }) |
+                @Html.ActionLink("Edit", "Edit", new { id = product.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = product.Id }, new { onclick = "return confirm('Are sure you want to delete?');" })
+            </td>
+        </tr>
+    }
+</table>
