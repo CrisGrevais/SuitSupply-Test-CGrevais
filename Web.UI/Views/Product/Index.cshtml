@@ -10,16 +10,21 @@
 <form asp-controller="Product" asp-action="Index" method="get">
     <div class="col-md-4">
         <p>
-            Name: <input type="text" name="Name">
+            Name or Code: <input type="text" name="Name">
             <input type="submit" class="btn btn-primary" value="Filter" />
         </p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-2">
+        <p>
+            @Html.ActionLink("Clear Filter", "Index")
+        </p>
+    </div>
+    <div class="col-md-3">
         <p>
             @Html.ActionLink("Create New", "Create")
         </p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <p>
             @Html.ActionLink("Export to Excel", "Export")
         </p>

@@ -3,29 +3,30 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>SuitSupply - Tech Test</h1>
+    <p class="lead">
+        This is a test application for a technical skill test.  This solution contains 3 main parts:
+    </p>
+    <ul>
+        <li>WebAPI</li>
+        <li>WebAPI.Client</li>
+        <li>Web.UI</li>
+    </ul>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>WebAPI</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            This is the micro API that provides the information about products.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>WebAPI.Client</h2>
+        <p>This layer is designed to work as a NuGet package, with the sole purpose of providing an interface for the WebAPI to any other project/solution of the platform.</p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Web.UI</h2>
+        <p>MVC project that consumes the WebAPI through the WebAPI.Client and allows the user to manage the products offered in the platform.</p>
     </div>
 </div>

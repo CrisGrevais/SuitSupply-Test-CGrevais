@@ -23,6 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Client", "WebAPI.Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.UI", "Web.UI\Web.UI.csproj", "{02E774A0-F21E-4D92-A4BC-31B1B8CF1064}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{C6AE1047-98DE-42A6-806A-43A7C08593EA}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\Backup\SuitSupplyTest.bak = ..\..\..\..\..\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\Backup\SuitSupplyTest.bak
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

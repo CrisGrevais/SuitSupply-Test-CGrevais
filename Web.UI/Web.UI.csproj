@@ -191,6 +191,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Photos\0b09f08b-cf22-4adc-8e0f-b9744c8cbb72_PUI80367-PB.jpg" />
+    <Content Include="Photos\2f6f3e15-5315-4422-99b9-5bf4143eca28_Typhlosion112.png" />
+    <Content Include="Photos\6da3122a-c357-4ad6-ad28-3c65143f974c_14106587955230.jpg" />
+    <Content Include="Photos\722bd604-b2fa-44bf-bbaf-72a77eccac27_133-Eevee.png" />
+    <Content Include="Photos\7ecadc99-05d3-4312-b865-89bb81ae9892_ACS_Evie_Frye_Promo_Art.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
